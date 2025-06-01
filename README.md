@@ -1,91 +1,103 @@
-# CurioScope
 
-CurioScope is a web application that allows users to ask questions and receive real-time answers with citations using the Perplexity Sonar API. It features follow-up questions (chain-of-thought), session history, and a clean, responsive UI.
+# 📰 Tackling Fake News
 
-## Features
+This project is an AI-powered Fake News Detection System designed to verify whether news is real or fake. It uses Natural Language Processing (NLP) and machine learning to analyze URLs, text, or images and deliver accurate results. The system is built with a focus on user interaction, feedback, and live information validation.
 
-- Ask any question and get detailed answers with citations
-- Follow-up questions for deeper exploration of topics
-- Save and revisit conversation history
-- Clean, responsive UI that works on all devices
-- Flask backend for secure API interaction
+---
 
-## Tech Stack
+## 🔍 Project Aim
 
-- Frontend: React, TypeScript, Tailwind CSS
-- Backend: Flask (Python)
-- API: Perplexity Sonar API
+To tackle the spread of misinformation by enabling users to verify the authenticity of news articles using AI, and optionally enhance results with Perplexity’s Sonar API for internet-backed search and reasoning.
 
-## Getting Started
+---
 
-### Prerequisites
+## 🚀 Features
 
-- Node.js and npm
-- Python 3.7+
-- Perplexity API key
+- ✅ URL/Text/Image Fake News Detection
+- 🧠 Machine Learning Model for Text Analysis
+- 📷 Image to Text Conversion (OCR)
+- 🖼 Image Authenticity Classification
+- 🔁 Deepfake Detection (planned)
+- 📊 Trending Fake News Tracker
+- 🧾 Source Credibility Check
+- 🌍 Multi-language Support (coming soon)
+- 🔐 User Authentication & Feedback System
+- 🧠 Optional Perplexity Sonar API Integration
 
-### Installation
+---
 
-1. Clone the repository:
-   ```
-   git clone https://github.com/your-username/curioscope.git
-   cd curioscope
-   ```
+## 🛠 Tech Stack
 
-2. Install frontend dependencies:
-   ```
-   npm install
-   ```
+### 🧪 Built With:
+- *Frontend*: HTML, CSS, JavaScript
+- *Backend*: Python (Flask)
+- *Database*: PostgreSQL
+- *AI/ML*: Scikit-learn, Google Vision API
+- *Cloud & APIs*:
+  - Google Vision API (for OCR & image classification)
+  - Perplexity Sonar API (for real-time search & deep research)
+- *Hosting*: Render / Railway (optional)
 
-3. Set up the Flask backend:
-   ```
-   cd api
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   pip install -r requirements.txt
-   ```
+---
 
-4. Create a `.env` file in the `api` directory with your Perplexity API key:
-   ```
-   PERPLEXITY_API_KEY=your_api_key_here
-   ```
+## 🔑 How Perplexity Sonar API is Used (Optional)
 
-### Running the Application
+If enabled:
+- Enhances verification using real-time search results.
+- Validates article content against live, cited information.
+- Supports deep reasoning for better decision making.
 
-1. Start the Flask backend:
-   ```
-   cd api
-   python app.py
-   ```
+> You can disable the Perplexity integration in config.py if not needed.
 
-2. In a separate terminal, start the React frontend:
-   ```
-   npm run dev
-   ```
+---
 
-3. Open your browser and navigate to `http://localhost:5173`
+## 🖥 How to Run Locally
 
-## Project Structure
+1. Clone the repository
+   ```bash
+   git clone https://github.com/your-repo/fake-news-detector.git
+   cd fake-news-detector
+Install requirements
 
-```
-curioscope/
-├── api/                 # Flask backend
-│   ├── app.py           # Main Flask application
-│   ├── requirements.txt # Python dependencies
-│   └── .env.example     # Example environment variables
-├── src/
-│   ├── api/             # API client functions
-│   ├── components/      # React components
-│   ├── types/           # TypeScript type definitions
-│   ├── App.tsx          # Main application component
-│   └── main.tsx         # Application entry point
-├── package.json         # Node.js dependencies
-└── README.md            # Project documentation
-```
+bash
+Copy
+Edit
+pip install -r requirements.txt
+Set up environment variables:
 
-## Acknowledgements
+Add your PostgreSQL credentials
 
-- [Perplexity](https://www.perplexity.ai/) for the Sonar API
-- [React](https://reactjs.org/)
-- [Flask](https://flask.palletsprojects.com/)
-- [Tailwind CSS](https://tailwindcss.com/)
+(Optional) Add your Perplexity API key in config.py
+
+Run the app
+
+bash
+Copy
+Edit
+python app.py
+Visit http://localhost:5000 in your browser.
+
+📂 File Structure
+arduino
+Copy
+Edit
+fake-news-detector/
+├── static/
+├── templates/
+├── app.py
+├── config.py
+├── model.pkl
+├── vision_model.py
+└── README.md
+📺 Demo Video
+[Insert YouTube/Vimeo/Facebook Video URL Here]
+
+📜 License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+🤖 Powered By
+OpenAI GPT / Google Vision
+
+Perplexity Sonar API
+
+Python, Flask, PostgreSQL
