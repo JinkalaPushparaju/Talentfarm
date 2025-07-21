@@ -1,0 +1,7 @@
+{
+  "accuracy": 0.3333333333333333,
+  "algorithm": "PassiveAggressiveClassifier",
+  "vectorizer": "TF-IDF",
+  "trained_at": "2025-07-21T11:40:36.515939",
+  "features": "max_features=5000, ngram_range=(1,2)"
+}
